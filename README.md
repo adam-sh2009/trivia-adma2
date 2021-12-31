@@ -1,1 +1,0 @@
-# trivia-adma2
