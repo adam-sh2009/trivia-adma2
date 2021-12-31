@@ -1,0 +1,40 @@
+import time
+
+true = ["T", "t", "True"]
+false = ["F", "f", "False"]
+correct = 0
+
+name = input("what's your name?")
+
+print("OK, " +  name +",let's get started.")
+time.sleep(2)
+
+print("True or False David tore his clothes because Saul was dead.")
+choice = input(">>> ")
+if choice in true:
+    correct += 1
+else:
+    correct += 0
+
+print("True or False David walked with the closet around all of Tel Aviv.")
+choice = input(">>> ")
+if choice in false:
+    correct += 1
+else:
+    correct += 0
+
+print("True or False The closet almost fell.")
+choice = input(">>> ")
+if choice in true:
+    correct += 1
+else:
+    correct += 0
+
+print("True or False Uza picked up the Closet after it fell.")
+choice = input(">>> ")
+if choice in true:
+    correct += 1
+else:
+    correct += 0
+
+print("You finishes, " + name + ". You got", correct, "out of 4 correct.")
